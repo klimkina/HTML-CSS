@@ -3,17 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <title>The Space Station | Resort</title>
+<link rel="stylesheet" href="">
 </head>
 
 <body>
-	<header>
-	    <h1>Liudmila Klimkina</h1>
-	    
-	</header>
+	
 	<!-- NAV -->
-	<div>
-		<div>
-			<ul>
+	<div class="wrap">
+		<div class="menu-comtainer">
+			<ul class="menu">
 				<a href="#home" id="link"><li>HOME</li></a>
 				<a href="#gallery"><li>GALLERY</li></a>
 				<a href="#contact"><li>RESERVATIONS</li></a>
@@ -23,18 +21,20 @@
 
 	<!-- HOME -->
 	<div id="home">
-		<div>
-			<span>The Space Station</span>
+		<div class="container">
+			<div class="text-center">
+				<span class="head-main">The Space Station</span>
+			</div>
 		</div>
 	</div>
 	<!-- GALLERY -->
-	<section>
-		<div id="gallery">
+	<section id="gallery">
+		<div class="container">
 			<h1>Gallery</h1>
-			<div>
+			<div class="flex-container">
 				<!-- Photo Container 1 -->
-				<div>
-					<div>
+				<div class="photo-container">
+					<div class="photo">
 						<img src="./images/thumb/thumbnail_1.png" alt="">
 						<div>
 							<h3>Click to Enlarge</h3>
@@ -43,8 +43,8 @@
 					</div>
 				</div>
 				<!-- Photo Container 2 -->
-				<div>
-					<div>
+				<div class="photo-container">
+					<div class="photo">
 						<img src="./images/thumb/thumbnail_2.png" alt="">
 						<div>
 							<h3>Click to Enlarge</h3>
@@ -53,8 +53,8 @@
 					</div>
 				</div>
 				<!-- Photo Container 3 -->
-				<div>
-					<div>
+				<div class="photo-container">
+					<div class="photo">
 						<img src="./images/thumb/thumbnail_3.png" alt="">
 						<div>
 							<h3>Click to Enlarge</h3>
@@ -63,8 +63,8 @@
 					</div>
 				</div>
 				<!-- Photo Container 4 -->
-				<div>
-					<div>
+				<div class="photo-container">
+					<div class="photo">
 						<img src="./images/thumb/thumbnail_4.png" alt="">
 						<div>
 							<h3>Click to Enlarge</h3>
@@ -73,8 +73,8 @@
 					</div>
 				</div>
 				<!-- Photo Container 5 -->
-				<div>
-					<div>
+				<div class="photo-container">
+					<div class="photo">
 						<img src="./images/thumb/thumbnail_5.png" alt="">
 						<div>
 							<h3>Click to Enlarge</h3>
@@ -83,8 +83,8 @@
 					</div>
 				</div>
 				<!-- Photo Container 6 -->
-				<div>
-					<div>
+				<div class="photo-container">
+					<div class="photo">
 						<img src="./images/thumb/thumbnail_6.png" alt="">
 						<div>
 							<h3>Click to Enlarge</h3>
@@ -93,8 +93,8 @@
 					</div>
 				</div>
 				<!-- Photo Container 7 -->
-				<div>
-					<div>
+				<div class="photo-container">
+					<div class="photo">
 						<img src="./images/thumb/thumbnail_7.png" alt="">
 						<div>
 							<h3>Click to Enlarge</h3>
@@ -103,8 +103,8 @@
 					</div>
 				</div>
 				<!-- Photo Container 8 -->
-				<div>
-					<div>
+				<div class="photo-container">
+					<div class="photo">
 						<img src="./images/thumb/thumbnail_8.png" alt="">
 						<div>
 							<h3>Click to Enlarge</h3>
@@ -113,8 +113,8 @@
 					</div>
 				</div>
 				<!-- Photo Container 9 -->
-				<div>
-					<div>
+				<div class="photo-container">
+					<div class="photo">
 						<img src="./images/thumb/thumbnail_9.png" alt="">
 						<div>
 							<h3>Click to Enlarge</h3>
@@ -126,12 +126,37 @@
 	</section>
 
 	<!-- RSVP -->
-	<section>
-		<div id="contact">
-			<div>Reservation</div>
-			<div>
+	<section id="contact">
+		<div class="container">
+			<div class="heading-padding">
+				<h1 class="heading-padding">Reservation</h1>
+				<div class="reservation">
+					<h2><span>Your adventure is just around the moon.</span><br/>
+					Reserve your flight today!</h2>
+					<p class="rsvp-text">
+						Please provide us with you basic contact information.
+					</p>
+					<div class="form-rsvp">
+						<form action="" method="post">
+							<input class="rsvp" type="text" value="" placeholder="First Name">
+							<input class="rsvp" type="text" value="" placeholder="Last Name">
+							<input class="rsvp" type="text" value="" placeholder="Email Address">
+							<input class="rsvp" type="text" value="" placeholder="Phone Number">
+							<div class="form-spacer">
+								<label class="terms">Terms and Conditions</label>
+							</div>
+							<div class="submit">
+								<input type="submit" value="Submit">
+							</div>
+						</form>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
+	<!-- FOOTER -->
+	<div id="footer">
+		www.thespacestation.space &nbsp;&nbsp; &copy; 2017
+	</div>
 </body>
 </html>
