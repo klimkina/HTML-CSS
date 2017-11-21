@@ -13,7 +13,7 @@ body {
 	font-size: 14px;
 	margin: 0;
 	font-family: "Helvetica Neue", Helvetica Arial, sans-serif;
-	line-height:  1.42857143
+	line-height:  1.42857143;
 	color: #333;
 	background-color: #fff;
 }
@@ -41,7 +41,7 @@ h1::after {
 	height: 2px;
 	width: 150px;
 	background: #E91C1C;
-	margin: 5px auto 40 px;
+	margin: 5px auto 40px;
 	box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -53,7 +53,6 @@ h2 {
 h3 {
 	line-height: 30px;
 	padding-bottom: 20px;
-	color: #E91C1C;
 }
 
 h4 {
@@ -108,11 +107,11 @@ section {
 	margin-left: -15px;
 }
 
-.clearfix: after,
-.container: after,
+.clearfix:after,
+.container:after,
 .navbar:after {
 	clear: both;
-	display: block;
+	display: table;
 	content: " ";
 }
 
@@ -131,12 +130,13 @@ section {
 	margin: 0% auto;
 	content: " ";
 	width: 100%;
+	position: fixed;
 	z-index: 100;
 }
 
 /* HOME SECTION */
 #home {
-	background-image: url(../images/blue_space.png) no-repeat 50% 50%;
+	background: url(../images/planets.jpg) no-repeat 50% 50%;
 	background-attachment: fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -230,17 +230,22 @@ section {
 
 .reservation p {
 	color: #13161B;
+	width: 50%;
+	margin: 0 auto;
+}
+.reservation form {
+	font-size: 15px;
 	outline: none;
 	font-weight: 600;
 	color: #8D8E8F;
 	padding: 12px 12px;
-	width: 80%;
+	width: 70%;
 	border: 1px solid #808080;
 	margin: 2% auto;
 	border-radius: 7px;
 	background: rgb(227, 222, 222);
 	box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
-	font-family: "raleway", sans-serif
+	font-family: "Raleway", sans-serif;
 }
 
 .reservation input[type="text"] {
@@ -249,7 +254,7 @@ section {
 	font-weight: 600;
 	color: #8D8E8F;
 	padding: 2% 1% 2% 7%;
-	width: 70%;
+	width: 80%;
 	border-top: 1px solid #090B0D;
 	border-right: 2px solid #424549;
 	border-bottom: 2px solid #424549;
@@ -258,7 +263,7 @@ section {
 	border-radius: 7px;
 	background: #13161B;
 	box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
-	font-family: "raleway", sans-serif;
+	font-family: "Rleway", sans-serif;
 }
 
 .reservation input[type="text"]:hover{
@@ -270,6 +275,7 @@ section {
 }
 
 .terms {
+	margin-top: 13%;
 	margin: 30px 1px 0 0;
 	padding-left: 52px;
 	font-size: 14px;
@@ -296,12 +302,57 @@ section {
 	outline: none;
 	text-align: center;
 	font-family: "Raleway", sans-serif;
-	margin: 0px 3%
+	margin: 0px 3%;
 	padding: 7px 0px;
 	width: 25%;
 	font-size: 18px;
-	transition: border-color 0.3s color 0.3s background-color0.3s;
+	transition: border-color 0.3s color 0.3s background-color 0.3s;
 	border-radius: 7px;
 	background-color: #797a7b;
 	box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.submit input[type="submit"]:hover {
+	color: #000;
+	background-color: #8D8E8F;
+	box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,0.5);
+}
+
+/* FOOTER */
+#footer {
+	background-color: rgba(100, 65,0, .3);
+	color: #000;
+	text-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.4);
+	padding: 20px 50px 20px 50px;
+	text-align: right;
+}
+
+/* MEDIA QUERIES */
+@media all and (max-width: 640px) and (min-width: 381px)
+	.head-main {
+		font-size: 28px;
+	}
+}
+
+@media all and (max-width: 381px) and (min-width: 200px)
+	.head-main {
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 768px)
+	.container {
+		width: 750px;
+	}
+}
+
+@media (min-width: 992px)
+	.container {
+		width: 970px;
+	}
+}
+@media (min-width: 1200px)
+	.container {
+		width: 1170px;
+	}
 }
